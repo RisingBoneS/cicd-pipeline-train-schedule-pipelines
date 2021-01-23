@@ -29,7 +29,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'sudo /user/bin/systemctl stop train-scheduler && rm -r /opt/train-scheduler
+                                        execCommand: 'sudo /user/bin/systemctl stop train-scheduler && rm -r /opt/train-scheduler'
                                     )
                                 ]  
                             )

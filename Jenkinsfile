@@ -5,13 +5,7 @@ pipeline {
             steps {
                 echo 'Running build automation'
                 sh './gradlew build --no-deamon'
-                archiveArtfacts artifacts: 'dist/trainSchedule.zip'
-            }
-        }
-        Stage ('DeploytoStage') {
-            steps { 
-                echo 'Testing the built package'
-               
+                archiveArtfacts artifacts: 'dist/trainSchedule.zip'  
            }
         }
     }

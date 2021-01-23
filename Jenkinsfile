@@ -11,9 +11,9 @@ pipeline {
         Stage ('DeploytoStage') {
             steps { 
                 echo 'Testing the built package'
-               }
+               
            }
-       }
-   }
+        }
+    }
 }
     
